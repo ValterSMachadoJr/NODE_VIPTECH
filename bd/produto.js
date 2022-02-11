@@ -36,23 +36,17 @@ module.exports = (sequelize, DataType) => {
         },
         imagem: {
             type: DataType.TEXT,
-            allowNull: false,
+            allowNull: true,
         },
 
-        data_cadastro: {
-            type: DataType.DATE,
-            allowNull: false,
-           // defaultValue: Sequelize.NOW,
-
-        },
+       
     },
         {
             tableName: "produto",
             timestamps: false,
         }
     
-        
-     
+           
     );
 
     return Produto;

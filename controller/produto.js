@@ -25,7 +25,7 @@ controller.criar = async (nome, id_cor, id_marca, valor, imagem) =>{
 controller.listar = async () => {
   try {
     return await Produto.findAll({
-    attributes: ["id_produto", "nome", "id_cor", "id_marca", "valor", "imagem", "data_cadastro"],
+    attributes: ["id_produto", "nome", "id_cor", "id_marca", "valor", "imagem"],
     order: [["id_produto"]]
     
     });
@@ -53,8 +53,6 @@ controller.buscarPorId = async (id_produto) => {
         id_marca,
         valor,
         imagem
-
-
       },
      {
        where: {

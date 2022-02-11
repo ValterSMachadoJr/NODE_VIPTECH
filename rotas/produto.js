@@ -31,7 +31,7 @@ router.get("/:id_produto?", async (req, res) => {
 router.post('/', async (req, res) => {
     try{
         const {nome, id_cor, id_marca, valor, imagem} = req.body;
-        const produtoCriado = await criar(nome, id_cor, id_marca, valor, imagem, new Date()); 
+        const produtoCriado = await criar(nome, id_cor, id_marca, valor, imagem); 
     
         res.send(produtoCriado);  // resposta para o usuario - utilizando o res
     } catch (erro){
