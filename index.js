@@ -1,7 +1,11 @@
 const express = require ("express");
 const app = express();
+const cors = require('cors');
 
 app.use(express.json());
+app.use(cors());
+
+
 const produto = require("./rotas/produto");
 const cor = require("./rotas/cor")
 const marca = require("./rotas/marca")
