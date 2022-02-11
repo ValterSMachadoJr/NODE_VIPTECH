@@ -1,4 +1,4 @@
-const {Marca} = require("../bd");
+const {Marca, sequelize} = require("../bd");
 
 
 let controller = { };
@@ -21,6 +21,7 @@ controller.listar = async () => {
     throw erro;
  }
 };
+
 
 controller.buscarPorId = async (id_marca) => {
   try {

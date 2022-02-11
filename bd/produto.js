@@ -39,6 +39,15 @@ module.exports = (sequelize, DataType) => {
             allowNull: true,
         },
 
+        data_cadastro: {
+            type: DataType.DATE,
+            allowNull: false,
+            defaultValue: new Date(),
+
+        },
+
+
+        
        
     },
         {

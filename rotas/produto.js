@@ -40,13 +40,14 @@ router.post('/', async (req, res) => {
     
 });
 
-router.post('/', async (req, res) =>  {   
+/*router.post('/', async (req, res) =>  {   
     try {
         const produtoCriado = await criar ();
   
     } catch (erro) {}
   });
   
+*/
 
 // Atualizar um recurso existente
 router.put('/:id_produto', async (req, res) =>  {

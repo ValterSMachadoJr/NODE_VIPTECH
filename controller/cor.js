@@ -1,4 +1,4 @@
-const {Cor} = require("../bd");
+const {Cor, sequelize} = require("../bd");
 
 
 let controller = { };
